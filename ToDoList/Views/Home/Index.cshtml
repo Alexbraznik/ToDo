@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+ <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Заголовок</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
+    <script src="~/libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Модальное окно</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control input-task-edit" placeholder="Введите задачу">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary save-changes" data-dismiss="modal">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*--------------------------------------------------------------------------------*@
+
+    <div id="myModalBox" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Модальное окно</h4>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    Вы действительно хотите удалить задачу?
+                </div>
+                <!-- Футер модального окна -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Нет</button>
+                    <button type="button" id="flex" class="btn btn-primary delete-changes">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*-----------------------------------------------------------------------------------*@
+
+    <div class="todo-wrap">
+            <div class="form-group">
+                <input type="text" class="form-control input-task" placeholder="Ваша задача" autofocus>
+            </div>
+            <button type="submit" class="btn btn-primary add-task">Сохранить</button>
+            <div class="todos-container" id="List">
+            </div>
+    </div>
+
+    <div class="hidden"></div>
+
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
+
+    <script src="~/libs/waypoints/waypoints.min.js"></script>
+    <script src="~/libs/animate/animate-css.js"></script>
+    <script src="~/libs/plugins-scroll/plugins-scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="~/libs/jquery/jquery-1.11.2.min.js"></script>
+
+
+
+
+
+    <script src="~/js/common.js"></script>
+
+    <script>
+    </script>
+
+</body>
+</html>
